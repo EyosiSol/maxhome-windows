@@ -1,2 +1,1 @@
-# maxhome-windows
-maxhome-windows
+# maxhomenow
