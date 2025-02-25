@@ -862,7 +862,7 @@ p {
 }
 
 /* Tablet Styles (768px to 1024px) */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .header {
     padding: 15px 20px;
   }
@@ -1027,10 +1027,10 @@ p {
     width: 100%;
     height: 300px;
   }
-}
+} */
 
 /* Mobile Styles (up to 767px) */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .nav {
     display: none;
     flex-direction: column;
@@ -1141,6 +1141,420 @@ p {
     text-align: center;
   }
 
+  .social-icons {
+    justify-content: center;
+  }
+
+  .license-info {
+    text-align: center;
+  }
+
+  .galleries {
+    clip-path: none;
+    padding-top: 40px;
+  }
+
+  .galleries .header {
+    padding: 0 20px;
+  }
+
+  .galleries .header .header-main {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+} */
+
+/* Additional Shared Responsive Styles
+.mid-image::after,
+.steps-image::after,
+.financing-image::after,
+.maximize-image::after,
+.family-image::after {
+  @media screen and (max-width: 1024px) {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      #fff 100%
+    );
+  }
+} */
+
+/* Improve Touch Targets for Mobile */
+/* @media screen and (max-width: 767px) {
+  .nav-link,
+  .footer-column ul li a,
+  .form-button,
+  .social-icons a {
+    padding: 12px;
+    display: inline-block;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  .top-banner {
+    padding: 0;
+  }
+
+  .top-banner-top {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .top-banner-top a {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    padding: 0;
+  }
+
+  .top-banner-top div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service {
+    display: none;
+  }
+
+  .sales {
+    display: none;
+  }
+
+  .hurricane {
+    display: none;
+  }
+} 
+*/
+
+/* Existing CSS code remains the same until the media queries section */
+
+/* Tablet Styles (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 15px 20px;
+  }
+  .solutions {
+    width: 100%;
+    clip-path: none;
+    padding-bottom: 0px;
+  }
+  .hero {
+    height: 50vh;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header img{
+    width: 80px;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    max-width: 100%;
+  }
+
+  .form-overlay {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 50%;
+    margin: 20px auto;
+    padding: 60px;
+  }
+
+  .form-title {
+    font-size: 2rem;
+  }
+
+  .form-subtitle {
+    font-size: 1rem;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+  }
+
+  .mid-content,
+  .solutions-content,
+  .steps-content,
+  .financing-content,
+  .maximize-content {
+    padding: 40px 20px;
+  }
+  .bottom .container .content {
+    align-items: center;
+    margin-top: 10px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+
+  .bottom .container {
+    clip-path: none;
+    padding-bottom: 12px;
+  }
+  .bottom .container .content .image {
+    flex: 2;
+    order: -1;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .link-container {
+    position: initial;
+    right: auto;
+    top: auto;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  .customers {
+    display: flex;
+    align-items: center;
+    padding-bottom: 240px;
+  }
+  .customers-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customers-content {
+    padding: 0 20px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .company-rating {
+    padding: 0 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .galleries {
+    padding: 240px 0px;
+    padding-bottom: 32px;
+    clip-path: polygon(55% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
+  }
+
+  .promo-circle {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 20px auto;
+  }
+
+  .diagonal-content {
+    flex-direction: column;
+  }
+
+  .text-section {
+    width: 100%;
+  }
+
+  .image-section {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* Mobile Styles (up to 767px) */
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .top-banner {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: 30vh;
+    padding: 10px;
+    clip-path: none;
+  }
+
+  .header {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .nav-button-container {
+    display: flex;
+    gap: 25px;
+  }
+
+  .nav-button {
+    min-width: 36px;
+    display: flex;
+  }
+  .solutions {
+    clip-path: none;
+    padding-bottom: 0px;
+  }
+  .hero-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .form-overlay {
+    position: initial;
+    right: auto;
+    top: auto;
+    width: 80%;
+    margin: 20px auto;
+    left: 50%;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .bottom .container {
+    width: 100%;
+    clip-path: none;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom .container .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .link-container {
+    position: initial;
+    right: auto;
+    top: auto;
+    width: 80%;
+    margin: 20px auto;
+    left: 50%;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .customers {
+    clip-path: none;
+    display: flex;
+    justify-items: center;
+  }
+  .customers-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+  }
+  .customers-title h1 {
+    text-align: center;
+  }
+
+  .header-main .nav {
+    display: none;
+  }
+  .steps-description {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .customers-rating {
+    flex-direction: column;
+  }
+
+  .customers-rating .rating {
+    width: 100%;
+  }
+
+  .solution-options {
+    flex-direction: column;
+  }
+
+  .solution-contents {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .maximize-content {
+    text-align: left;
+  }
+
+  .maximize-title {
+    font-size: 1.8rem;
+  }
+
+  .family-description {
+    padding-top: 40px;
+    text-align: center;
+  }
+
   /* Additional mobile-specific adjustments */
   .social-icons {
     justify-content: center;
@@ -1185,55 +1599,3 @@ p {
 }
 
 /* Improve Touch Targets for Mobile */
-@media screen and (max-width: 767px) {
-  .nav-link,
-  .footer-column ul li a,
-  .form-button,
-  .social-icons a {
-    padding: 12px;
-    display: inline-block;
-  }
-
-  input,
-  button,
-  select,
-  textarea {
-    font-size: 16px;
-    /* Prevent zoom on focus in iOS */
-  }
-
-  .top-banner {
-    padding: 0;
-  }
-
-  .top-banner-top {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-  }
-
-  .top-banner-top a {
-    display: flex;
-    flex-direction: column;
-
-    flex: 1;
-    padding: 0;
-  }
-
-  .top-banner-top div {
-    display: flex;
-    justify-content: center;
-  }
-
-  .service {
-    display: none;
-  }
-
-  .sales {
-    display: none;
-  }
-
-  .hurricane {
-    display: none;
-  }
-}
